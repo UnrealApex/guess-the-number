@@ -1,7 +1,9 @@
 # TODO: add difficultly levels using enums
+# TODO: add score
+import math
 import random
-# kill_game = False 
-difficultly = 0
+
+# kill_game = False
 
 def playGame():
   kill_game = False
@@ -20,8 +22,8 @@ def playGame():
     else:
       print("You didn't guess the number\nThe number was " + str(x));  
     playAgain()
-  return kill_game  
-
+    return kill_game  
+    # print(kill_game)
 
 
 # FIXME: make sure that game starts again and stops when users wants it to  
@@ -30,6 +32,7 @@ def playAgain():
   print(z)
   if z == "y" or z == "yes":
     killgame_game = False
+    # print("Restarting game")
   elif z == "n" or z == "no":
     print("Game terminated")
     killgame_game = True
