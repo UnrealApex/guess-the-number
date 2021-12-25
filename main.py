@@ -29,8 +29,7 @@ while True:
   print(play_again)
   if play_again == "y" or play_again == "yes":
     print("\nRestarting game...\n")
-  elif play_again == "n" or play_again == "no":
+  # if the users types anything other than yes, stop the game 
+  else:
     print("Game stopped")
     break
-  else:
-    print("Enter the letter y or n")
